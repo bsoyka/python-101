@@ -1,0 +1,19 @@
+title: Python 101
+tagline: A brand new course on Learning Lab
+description: >-
+  In this course, you will learn and use the absolute basics of the Python
+  programming language.
+template:
+  repo: python-101-template
+  name: python-101
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
